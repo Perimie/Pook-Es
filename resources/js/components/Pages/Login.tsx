@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
-import Logo from './assets/R.png';
+import Logo from './assets/PookEs-logo.png';
+import ReactDom from 'react-dom';
 
 const Login: React.FC = () => {
   const [showPass, setShowPass] = useState(false);
   const [showButton, setShowButton] = useState(false);
+  const [password, setPassword] = useState('');
 
   const toggleShowPass = () => {
     setShowPass(!showPass);
+  };
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const input = e.target.value;
+    setPassword(input);
+    setShowButton(input.length > 0);
   };
 
   return (
@@ -31,7 +39,7 @@ const Login: React.FC = () => {
               <div className="label">
                 <span className="label-text text-neutral font-semibold text-md">Learners Reference Number</span>
               </div>
-              <input type="text" placeholder="Learners No." className="input input-bordered bg-neutral" />
+              <input type="text" placeholder="Learners Ref No." className="input input-bordered bg-neutral" />
             </label>
             <label className="form-control w-full max-w-xs mb-5">
               <div className="label">
@@ -40,13 +48,14 @@ const Login: React.FC = () => {
               <div className="relative">
                 <input
                   type={showPass ? 'text' : 'password'}
-                  onFocus={() => setShowButton(true)}
+                  value={password}
+                  onChange={handlePasswordChange}
                   placeholder="Password"
                   className="input input-bordered w-full max-w-lg bg-neutral"
                 />
                 {showButton && (
                   <button
-                    className="absolute right-2 top-3 "
+                    className="absolute right-2 top-3"
                     onClick={toggleShowPass}
                   >
                     {showPass ? (
@@ -87,7 +96,7 @@ const Login: React.FC = () => {
                   </button>
                 )}
               </div>
-              <a className="ml-24 link link-neutral">Forgot Password</a>
+              <a className="ml-28 link link-neutral text-sm">Forgot Password?</a>
             </label>
             <div className="card-actions justify-center mb-5">
               <button className="btn px-10">Login</button>
