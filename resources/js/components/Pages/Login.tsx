@@ -25,9 +25,13 @@ const Login: React.FC = () => {
             <img src={Logo} alt="Logo" className="w-16 h-16" />
             <h2 className="card-title font-bold text-3xl text-neutral">Pook Elementary School</h2>
           </div>
-          <h1 className="font-bold text-2xl text-neutral">Welcome to</h1>
+          <h1 className="font-bold text-2xl text-neutral">Mission</h1>
           <p className="text-neutral">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis. Viverra adipiscing at in tellus. Amet mattis vulputate enim nulla aliquet porttitor lacus. Vitae auctor eu augue ut lectus. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Eget aliquet nibh praesent tristique magna. Consequat ac felis donec et odio pellentesque. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Consectetur lorem donec massa sapien faucibus et. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Fermentum iaculis eu non diam phasellus vestibulum lorem sed.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis. Viverra adipiscing at in tellus. Amet mattis vulputate enim nulla aliquet porttitor lacus. Vitae auctor eu augue ut lectus. 
+          </p>
+          <h1 className="font-bold text-2xl text-neutral">Vision</h1>
+          <p className="text-neutral">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id porta nibh venenatis cras sed felis. Viverra adipiscing at in tellus. Amet mattis vulputate enim nulla aliquet porttitor lacus. Vitae auctor eu augue ut lectus. 
           </p>
         </div>
       </div>
