@@ -35,7 +35,11 @@ const Login: React.FC = () => {
           </p>
         </div>
       </div>
+      
+      
       <div className="rounded-r-lg bg-secondary text-primary-content max-w-md">
+        {/* Login form */}
+      <form action="">
         <div className="card-body">
           <div className="bg-primary rounded-lg mt-16 flex flex-col px-7 shadow-xl">
             <h2 className="card-title text-neutral my-4 text-3xl justify-center">Login</h2>
@@ -43,6 +47,7 @@ const Login: React.FC = () => {
               <div className="label">
                 <span className="label-text text-neutral font-semibold text-md">Learners Reference Number</span>
               </div>
+              
               <input type="text" placeholder="Learners Ref No." className="input input-bordered bg-neutral" />
             </label>
             <label className="form-control w-full max-w-xs mb-5">
@@ -105,9 +110,12 @@ const Login: React.FC = () => {
             <div className="card-actions justify-center mb-5">
               <button className="btn px-10">Login</button>
             </div>
+            
           </div>
         </div>
+        </form>
       </div>
+      
     </div>
   );
 };
