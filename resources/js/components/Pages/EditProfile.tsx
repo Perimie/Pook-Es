@@ -53,7 +53,7 @@ const EditProfile: React.FC = () => {
                 </div>
 
                 <div className="card rounded-lg w-auto bg-gray-300 text-primary-content my-2 mx-5">
-                {/* edit profile form */}
+                {/* edit profile form */} 
                 <form action="">
                     {/* Student User Account */}
                     <div className="card-body rounded-t-lg bg-black p-2">
@@ -82,7 +82,7 @@ const EditProfile: React.FC = () => {
                     </div>
                     <div className="card-body p-4">
                     <div className='grid lg:grid-cols-3 sm:grid-cols-2 gap-4 mx-5'>
-                                        <Input color="purple" label="Apartment/House" crossOrigin={undefined} placeholder="Apartment/House"  onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
+                                        <Input color="purple" label="Apartment/House" crossOrigin={undefined} placeholder="Input Apartment/House"  onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
 
                                         <Input color="purple" label="Street" crossOrigin={undefined} placeholder="Input Street"  onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}  />
                    
