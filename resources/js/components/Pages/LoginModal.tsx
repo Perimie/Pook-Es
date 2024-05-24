@@ -33,14 +33,15 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-base-100 p-6 rounded shadow-lg">
-                <h2 className="text-xl mb-4">Login</h2>
+            <div className="bg-base-100 p-6 rounded-lg  ">
+                <h1 className="text-3xl mb-4 text-center text-white">Login</h1>
                 {/* Login FOrm */}
                 <form onSubmit={handleSubmit}>
                     <div className="mb-4">
-                        <label className="block text-white">Email</label>
-                        <input 
-                            type="email" 
+                        <label className="block text-white">Username</label>
+                        <input
+                            placeholder='Username' 
+                            type="text" 
                             className="w-full px-3 py-2 border rounded text-black" 
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -49,6 +50,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                     <div className="mb-0 relative color">
                             <label className="block text-white">Password</label>
                             <input 
+                                placeholder='Password'
                                 type={showPass ? 'text' : 'password'}
                                 className="w-full px-3 py-2 border rounded text-black" 
                                 value={password}
