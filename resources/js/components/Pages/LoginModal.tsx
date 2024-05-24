@@ -40,7 +40,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                     <div className="mb-4">
                         <label className="block text-white">Username</label>
                         <input
-                            placeholder='Input Username' 
+                            placeholder='Username' 
                             type="text" 
                             className="w-full px-3 py-2 border rounded text-black" 
                             value={email}
