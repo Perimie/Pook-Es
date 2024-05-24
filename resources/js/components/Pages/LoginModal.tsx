@@ -40,7 +40,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                     <div className="mb-4">
                         <label className="block text-white">Username</label>
                         <input
-                            placeholder='Username' 
+                            placeholder='Input Username' 
                             type="text" 
                             className="w-full px-3 py-2 border rounded text-black" 
                             value={email}
@@ -105,20 +105,22 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose }) => {
                     </div>
                     
                     
-                    <div className="flex justify-end">
-                        <button 
-                            type="button" 
-                            onClick={onClose} 
-                            className="mr-4 px-4 py-2 bg-red-500 hover:bg-red-800    ease-out duration-300 text-white rounded"
-                        >
-                            Cancel
-                        </button>
+                    <div className="flex justify-end flex-col gap-2">
+
                         <button 
                             type="submit" 
                             className="px-4 py-2 bg-blue-500 hover:bg-blue-800 ease-out duration-300 text-white rounded "
                         >
                             Login
                         </button>
+                        <button 
+                            type="button" 
+                            onClick={onClose} 
+                            className=" px-4 py-2 bg-red-500 hover:bg-red-800    ease-out duration-300 text-white rounded"
+                        >
+                            Cancel
+                        </button>
+                        
                         
                     </div>
                 </form>
