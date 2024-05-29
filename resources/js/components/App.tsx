@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LoginModal from './Pages/LoginModal';
 import Homepage from './Pages/Homepage';
+import EditProfile from './Pages/EditProfile';
 
 
 
@@ -22,9 +23,11 @@ const App: React.FC = () => {
 
     return (
         <div className="App">
-            <Homepage/>
-            <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+            {/* <Homepage/>
+            <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
+            <EditProfile/>
         </div>
+
     );
 };
 
