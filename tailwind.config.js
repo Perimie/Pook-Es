@@ -15,31 +15,31 @@ module.exports = withMT({
   plugins: [
     daisyui,
   ],
-    daisyui: {
-      themes: [
-        {
-          mytheme: {
+//     daisyui: {
+//       themes: [
+//         {
+// //           mytheme: {
           
- "primary": "#BC7FCD",
+// //  "primary": "#BC7FCD",
           
- "secondary": "#FB9AD1",
+// //  "secondary": "#FB9AD1",
           
- "accent": "#FFCDEA",
+// //  "accent": "#FFCDEA",
           
- "neutral": "#ffffff",
+// //  "neutral": "#ffffff",
           
- "base-100": "#86469C",
+// //  "base-100": "#86469C",
           
- "info": "#0000ff",
+// //  "info": "#0000ff",
           
- "success": "#00ff00",
+// //  "success": "#00ff00",
           
- "warning": "#FFA62F",
+// //  "warning": "#FFA62F",
           
- "error": "#ff0000",
-          },
-        },
-      ],
-    },
+// //  "error": "#ff0000",
+// //           },
+// //         },
+//       ],
+//     },
 
   });

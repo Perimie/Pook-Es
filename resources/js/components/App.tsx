@@ -23,9 +23,9 @@ const App: React.FC = () => {
 
     return (
         <div className="App">
-            {/* <Homepage/>
-            <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
-            <EditProfile/>
+            <Homepage/>
+            <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+            {/* <EditProfile/> */}
         </div>
 
     );
